@@ -22,7 +22,6 @@ Partial Class Format
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
-        Me.RichTextBox1 = New System.Windows.Forms.RichTextBox()
         Me.ComboBox1 = New System.Windows.Forms.ComboBox()
         Me.Label1 = New System.Windows.Forms.Label()
         Me.Label2 = New System.Windows.Forms.Label()
@@ -33,15 +32,10 @@ Partial Class Format
         Me.RichTextBox2 = New System.Windows.Forms.RichTextBox()
         Me.Label5 = New System.Windows.Forms.Label()
         Me.ComboBox4 = New System.Windows.Forms.ComboBox()
+        Me.Button1 = New System.Windows.Forms.Button()
+        Me.Button2 = New System.Windows.Forms.Button()
+        Me.ListBox1 = New System.Windows.Forms.ListBox()
         Me.SuspendLayout()
-        '
-        'RichTextBox1
-        '
-        Me.RichTextBox1.Location = New System.Drawing.Point(12, 54)
-        Me.RichTextBox1.Name = "RichTextBox1"
-        Me.RichTextBox1.Size = New System.Drawing.Size(202, 161)
-        Me.RichTextBox1.TabIndex = 3
-        Me.RichTextBox1.Text = ""
         '
         'ComboBox1
         '
@@ -116,7 +110,7 @@ Partial Class Format
         Me.RichTextBox2.ReadOnly = True
         Me.RichTextBox2.ScrollBars = System.Windows.Forms.RichTextBoxScrollBars.None
         Me.RichTextBox2.ShortcutsEnabled = False
-        Me.RichTextBox2.Size = New System.Drawing.Size(138, 46)
+        Me.RichTextBox2.Size = New System.Drawing.Size(138, 71)
         Me.RichTextBox2.TabIndex = 13
         Me.RichTextBox2.TabStop = False
         Me.RichTextBox2.Text = "AaBbCcDdEeFf"
@@ -139,11 +133,40 @@ Partial Class Format
         Me.ComboBox4.Size = New System.Drawing.Size(202, 21)
         Me.ComboBox4.TabIndex = 15
         '
+        'Button1
+        '
+        Me.Button1.Location = New System.Drawing.Point(139, 209)
+        Me.Button1.Name = "Button1"
+        Me.Button1.Size = New System.Drawing.Size(75, 31)
+        Me.Button1.TabIndex = 16
+        Me.Button1.Text = "Save"
+        Me.Button1.UseVisualStyleBackColor = True
+        '
+        'Button2
+        '
+        Me.Button2.Location = New System.Drawing.Point(29, 209)
+        Me.Button2.Name = "Button2"
+        Me.Button2.Size = New System.Drawing.Size(75, 31)
+        Me.Button2.TabIndex = 17
+        Me.Button2.Text = "Cancel"
+        Me.Button2.UseVisualStyleBackColor = True
+        '
+        'ListBox1
+        '
+        Me.ListBox1.FormattingEnabled = True
+        Me.ListBox1.Location = New System.Drawing.Point(12, 57)
+        Me.ListBox1.Name = "ListBox1"
+        Me.ListBox1.Size = New System.Drawing.Size(202, 147)
+        Me.ListBox1.TabIndex = 18
+        '
         'Format
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(374, 227)
+        Me.ClientSize = New System.Drawing.Size(374, 243)
+        Me.Controls.Add(Me.ListBox1)
+        Me.Controls.Add(Me.Button2)
+        Me.Controls.Add(Me.Button1)
         Me.Controls.Add(Me.ComboBox4)
         Me.Controls.Add(Me.Label5)
         Me.Controls.Add(Me.RichTextBox2)
@@ -154,7 +177,7 @@ Partial Class Format
         Me.Controls.Add(Me.Label2)
         Me.Controls.Add(Me.Label1)
         Me.Controls.Add(Me.ComboBox1)
-        Me.Controls.Add(Me.RichTextBox1)
+        Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog
         Me.MaximizeBox = False
         Me.MinimizeBox = False
         Me.Name = "Format"
@@ -164,7 +187,6 @@ Partial Class Format
         Me.PerformLayout()
 
     End Sub
-    Friend WithEvents RichTextBox1 As System.Windows.Forms.RichTextBox
     Friend WithEvents ComboBox1 As System.Windows.Forms.ComboBox
     Friend WithEvents Label1 As System.Windows.Forms.Label
     Friend WithEvents Label2 As System.Windows.Forms.Label
@@ -175,4 +197,7 @@ Partial Class Format
     Friend WithEvents RichTextBox2 As System.Windows.Forms.RichTextBox
     Friend WithEvents Label5 As System.Windows.Forms.Label
     Friend WithEvents ComboBox4 As System.Windows.Forms.ComboBox
+    Friend WithEvents Button1 As System.Windows.Forms.Button
+    Friend WithEvents Button2 As System.Windows.Forms.Button
+    Friend WithEvents ListBox1 As System.Windows.Forms.ListBox
 End Class

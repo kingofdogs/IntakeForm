@@ -27,13 +27,14 @@ Partial Class Form1
         Me.SaveToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.SaveAsToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.SaveAsToolStripMenuItem1 = New System.Windows.Forms.ToolStripMenuItem()
+        Me.PrintCtrlPToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.ExitToolStripMenuItem1 = New System.Windows.Forms.ToolStripMenuItem()
         Me.ToolsToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.ClearAllToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.SearchToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.OptionsToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.HelpToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.SupportToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
-        Me.ExitToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.StatusStrip1 = New System.Windows.Forms.StatusStrip()
         Me.ToolStripProgressBar1 = New System.Windows.Forms.ToolStripProgressBar()
         Me.TextBox1 = New System.Windows.Forms.TextBox()
@@ -60,8 +61,7 @@ Partial Class Form1
         Me.Button2 = New System.Windows.Forms.Button()
         Me.Button3 = New System.Windows.Forms.Button()
         Me.Label7 = New System.Windows.Forms.Label()
-        Me.PrintCtrlPToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
-        Me.ExitToolStripMenuItem1 = New System.Windows.Forms.ToolStripMenuItem()
+        Me.FontToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.MenuStrip1.SuspendLayout()
         Me.StatusStrip1.SuspendLayout()
         Me.Panel1.SuspendLayout()
@@ -87,20 +87,32 @@ Partial Class Form1
         'SaveToolStripMenuItem
         '
         Me.SaveToolStripMenuItem.Name = "SaveToolStripMenuItem"
-        Me.SaveToolStripMenuItem.Size = New System.Drawing.Size(118, 22)
+        Me.SaveToolStripMenuItem.Size = New System.Drawing.Size(183, 22)
         Me.SaveToolStripMenuItem.Text = "Open"
         '
         'SaveAsToolStripMenuItem
         '
         Me.SaveAsToolStripMenuItem.Name = "SaveAsToolStripMenuItem"
-        Me.SaveAsToolStripMenuItem.Size = New System.Drawing.Size(118, 22)
+        Me.SaveAsToolStripMenuItem.Size = New System.Drawing.Size(183, 22)
         Me.SaveAsToolStripMenuItem.Text = "Save"
         '
         'SaveAsToolStripMenuItem1
         '
         Me.SaveAsToolStripMenuItem1.Name = "SaveAsToolStripMenuItem1"
-        Me.SaveAsToolStripMenuItem1.Size = New System.Drawing.Size(118, 22)
+        Me.SaveAsToolStripMenuItem1.Size = New System.Drawing.Size(183, 22)
         Me.SaveAsToolStripMenuItem1.Text = "Save as.."
+        '
+        'PrintCtrlPToolStripMenuItem
+        '
+        Me.PrintCtrlPToolStripMenuItem.Name = "PrintCtrlPToolStripMenuItem"
+        Me.PrintCtrlPToolStripMenuItem.Size = New System.Drawing.Size(183, 22)
+        Me.PrintCtrlPToolStripMenuItem.Text = "Print              (Ctrl+P)"
+        '
+        'ExitToolStripMenuItem1
+        '
+        Me.ExitToolStripMenuItem1.Name = "ExitToolStripMenuItem1"
+        Me.ExitToolStripMenuItem1.Size = New System.Drawing.Size(183, 22)
+        Me.ExitToolStripMenuItem1.Text = "Exit"
         '
         'ToolsToolStripMenuItem
         '
@@ -118,12 +130,12 @@ Partial Class Form1
         'SearchToolStripMenuItem
         '
         Me.SearchToolStripMenuItem.Name = "SearchToolStripMenuItem"
-        Me.SearchToolStripMenuItem.Size = New System.Drawing.Size(118, 22)
+        Me.SearchToolStripMenuItem.Size = New System.Drawing.Size(152, 22)
         Me.SearchToolStripMenuItem.Text = "Search"
         '
         'OptionsToolStripMenuItem
         '
-        Me.OptionsToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.HelpToolStripMenuItem, Me.SupportToolStripMenuItem, Me.ExitToolStripMenuItem})
+        Me.OptionsToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.HelpToolStripMenuItem, Me.SupportToolStripMenuItem})
         Me.OptionsToolStripMenuItem.Name = "OptionsToolStripMenuItem"
         Me.OptionsToolStripMenuItem.Size = New System.Drawing.Size(61, 20)
         Me.OptionsToolStripMenuItem.Text = "Options"
@@ -131,20 +143,14 @@ Partial Class Form1
         'HelpToolStripMenuItem
         '
         Me.HelpToolStripMenuItem.Name = "HelpToolStripMenuItem"
-        Me.HelpToolStripMenuItem.Size = New System.Drawing.Size(116, 22)
+        Me.HelpToolStripMenuItem.Size = New System.Drawing.Size(152, 22)
         Me.HelpToolStripMenuItem.Text = "Help"
         '
         'SupportToolStripMenuItem
         '
         Me.SupportToolStripMenuItem.Name = "SupportToolStripMenuItem"
-        Me.SupportToolStripMenuItem.Size = New System.Drawing.Size(116, 22)
+        Me.SupportToolStripMenuItem.Size = New System.Drawing.Size(152, 22)
         Me.SupportToolStripMenuItem.Text = "Support"
-        '
-        'ExitToolStripMenuItem
-        '
-        Me.ExitToolStripMenuItem.Name = "ExitToolStripMenuItem"
-        Me.ExitToolStripMenuItem.Size = New System.Drawing.Size(116, 22)
-        Me.ExitToolStripMenuItem.Text = "Exit"
         '
         'StatusStrip1
         '
@@ -228,9 +234,10 @@ Partial Class Form1
         '
         'FileToolStripMenuItem1
         '
+        Me.FileToolStripMenuItem1.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.FontToolStripMenuItem})
         Me.FileToolStripMenuItem1.Name = "FileToolStripMenuItem1"
-        Me.FileToolStripMenuItem1.Size = New System.Drawing.Size(52, 20)
-        Me.FileToolStripMenuItem1.Text = "Font..."
+        Me.FileToolStripMenuItem1.Size = New System.Drawing.Size(57, 20)
+        Me.FileToolStripMenuItem1.Text = "Format"
         '
         'EditToolStripMenuItem
         '
@@ -242,13 +249,13 @@ Partial Class Form1
         'UndoCtrlZToolStripMenuItem
         '
         Me.UndoCtrlZToolStripMenuItem.Name = "UndoCtrlZToolStripMenuItem"
-        Me.UndoCtrlZToolStripMenuItem.Size = New System.Drawing.Size(196, 22)
+        Me.UndoCtrlZToolStripMenuItem.Size = New System.Drawing.Size(177, 22)
         Me.UndoCtrlZToolStripMenuItem.Text = "Undo          (Ctrl+Z)"
         '
         'CutCtrlXToolStripMenuItem
         '
         Me.CutCtrlXToolStripMenuItem.Name = "CutCtrlXToolStripMenuItem"
-        Me.CutCtrlXToolStripMenuItem.Size = New System.Drawing.Size(196, 22)
+        Me.CutCtrlXToolStripMenuItem.Size = New System.Drawing.Size(177, 22)
         Me.CutCtrlXToolStripMenuItem.Text = "Cut              (Ctrl+X)"
         '
         'CopyCtrlCToolStripMenuItem
@@ -266,7 +273,7 @@ Partial Class Form1
         'DeleteToolStripMenuItem
         '
         Me.DeleteToolStripMenuItem.Name = "DeleteToolStripMenuItem"
-        Me.DeleteToolStripMenuItem.Size = New System.Drawing.Size(196, 22)
+        Me.DeleteToolStripMenuItem.Size = New System.Drawing.Size(177, 22)
         Me.DeleteToolStripMenuItem.Text = "Delete          Del"
         '
         'Label1
@@ -349,17 +356,11 @@ Partial Class Form1
         Me.Label7.TabIndex = 19
         Me.Label7.Text = "ID"
         '
-        'PrintCtrlPToolStripMenuItem
+        'FontToolStripMenuItem
         '
-        Me.PrintCtrlPToolStripMenuItem.Name = "PrintCtrlPToolStripMenuItem"
-        Me.PrintCtrlPToolStripMenuItem.Size = New System.Drawing.Size(183, 22)
-        Me.PrintCtrlPToolStripMenuItem.Text = "Print              (Ctrl+P)"
-        '
-        'ExitToolStripMenuItem1
-        '
-        Me.ExitToolStripMenuItem1.Name = "ExitToolStripMenuItem1"
-        Me.ExitToolStripMenuItem1.Size = New System.Drawing.Size(183, 22)
-        Me.ExitToolStripMenuItem1.Text = "Exit"
+        Me.FontToolStripMenuItem.Name = "FontToolStripMenuItem"
+        Me.FontToolStripMenuItem.Size = New System.Drawing.Size(152, 22)
+        Me.FontToolStripMenuItem.Text = "Font"
         '
         'Form1
         '
@@ -434,12 +435,12 @@ Partial Class Form1
     Friend WithEvents SearchToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
     Friend WithEvents HelpToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
     Friend WithEvents SupportToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
-    Friend WithEvents ExitToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
     Friend WithEvents Button1 As System.Windows.Forms.Button
     Friend WithEvents Button2 As System.Windows.Forms.Button
     Friend WithEvents Button3 As System.Windows.Forms.Button
     Friend WithEvents Label7 As System.Windows.Forms.Label
     Friend WithEvents PrintCtrlPToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
     Friend WithEvents ExitToolStripMenuItem1 As System.Windows.Forms.ToolStripMenuItem
+    Friend WithEvents FontToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
 
 End Class
